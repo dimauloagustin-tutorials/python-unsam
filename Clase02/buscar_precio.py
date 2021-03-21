@@ -1,7 +1,6 @@
 def buscar_precio(name):
     found = False
     with open("../Data/precios.csv", 'rt') as f:
-            next(f)
             for line in f:
                 vals = line[:-1].split(",")
                 if vals[0] == name:
